@@ -1,5 +1,5 @@
 //
-//  FirstViewController.h
+//  MyClosetItemsNav.h
 //  MyCloset
 //
 //  Created by sunning on 14-11-2.
@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface FirstViewController : UIViewController
+@interface MyClosetItemsNav : UINavigationController
 
 @end

@@ -1,103 +1,169 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="5023" systemVersion="13A603" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="8YX-ce-x5E">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="5056" systemVersion="13D65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="8YX-ce-x5E">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3733"/>
     </dependencies>
     <scenes>
-        <!--class Prefix:identifier First View Controller - First-->
-        <scene sceneID="W3I-pn-N6e">
+        <!--My Closet Items Nav - NAV-->
+        <scene sceneID="Jf4-8m-hJo">
             <objects>
-                <viewController title="First" id="CZ4-MO-1fc" customClass="FirstViewController" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="s9W-kb-ARv"/>
-                        <viewControllerLayoutGuide type="bottom" id="dtj-EO-iXF"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="2VE-Yg-loa">
+                <navigationController title="NAV" definesPresentationContext="YES" id="0xo-em-fgL" customClass="MyClosetItemsNav" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="衣橱" image="second" id="rML-4F-xJY"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="SzP-6h-8Ft">
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="rUm-ps-od8" kind="relationship" relationship="rootViewController" id="en0-Ch-Zpq"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="6Pr-Jx-uHn" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="352" y="-470"/>
+        </scene>
+        <!--My Closet Items View - MyClosetNav-->
+        <scene sceneID="KJJ-dl-S1K">
+            <objects>
+                <collectionViewController autoresizesArchivedViewToFullSize="NO" title="MyClosetNav" id="rUm-ps-od8" customClass="MyClosetItemsView" colorLabel="IBBuiltInLabel-Red" sceneMemberID="viewController">
+                    <collectionView key="view" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" minimumZoomScale="0.0" maximumZoomScale="0.0" dataMode="prototypes" id="L2t-k5-19R" colorLabel="IBBuiltInLabel-Orange">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" text="First View" textAlignment="center" lineBreakMode="tailTruncation" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="Zhg-ve-WU7">
-                                <rect key="frame" x="20" y="158" width="280" height="42"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
-                                <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="36"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <textView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" userInteractionEnabled="NO" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" delaysContentTouches="NO" canCancelContentTouches="NO" minimumZoomScale="0.0" maximumZoomScale="0.0" bouncesZoom="NO" editable="NO" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="tZ3-Hv-Q7E">
-                                <rect key="frame" x="20" y="240" width="280" height="88"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="88" id="rDj-Sg-2Zj"/>
-                                </constraints>
-                                <string key="text">Loaded by the first view controller — an instance of FirstViewController — specified in the app delegate.</string>
-                                <fontDescription key="fontDescription" type="system" size="system"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textView>
-                        </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
-                        <constraints>
-                            <constraint firstAttribute="trailing" secondItem="tZ3-Hv-Q7E" secondAttribute="trailing" constant="20" symbolic="YES" id="94m-GQ-azi"/>
-                            <constraint firstItem="tZ3-Hv-Q7E" firstAttribute="top" secondItem="Zhg-ve-WU7" secondAttribute="bottom" constant="40" id="G3o-MK-III"/>
-                            <constraint firstItem="Zhg-ve-WU7" firstAttribute="leading" secondItem="2VE-Yg-loa" secondAttribute="leading" constant="20" symbolic="YES" id="JQj-gp-vk2"/>
-                            <constraint firstAttribute="trailing" secondItem="Zhg-ve-WU7" secondAttribute="trailing" constant="20" symbolic="YES" id="eHs-J5-0HT"/>
-                            <constraint firstItem="tZ3-Hv-Q7E" firstAttribute="leading" secondItem="2VE-Yg-loa" secondAttribute="leading" constant="20" symbolic="YES" id="lKy-m9-LcB"/>
-                            <constraint firstAttribute="centerY" secondItem="tZ3-Hv-Q7E" secondAttribute="centerY" id="xLM-BA-nZb"/>
-                        </constraints>
-                    </view>
-                    <tabBarItem key="tabBarItem" title="First" image="first" id="u1e-5L-l1D"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="Qh2-T1-AhA" sceneMemberID="firstResponder"/>
+                        <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="2Qo-ta-C1r">
+                            <size key="itemSize" width="100" height="120"/>
+                            <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                            <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                            <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                        </collectionViewFlowLayout>
+                        <cells>
+                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="MyClosetItems" id="5s8-EY-nSr" customClass="MyClosetItemsCell">
+                                <rect key="frame" x="0.0" y="64" width="100" height="120"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                                    <rect key="frame" x="0.0" y="0.0" width="100" height="120"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="uQX-QA-cav">
+                                            <rect key="frame" x="0.0" y="0.0" width="80" height="80"/>
+                                            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                        </imageView>
+                                        <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="大衣" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Uin-PF-syy">
+                                            <rect key="frame" x="20" y="88" width="42" height="21"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <accessibility key="accessibilityConfiguration" label=""/>
+                                            <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                </view>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <size key="customSize" width="100" height="120"/>
+                                <connections>
+                                    <outlet property="myClosetItemsImage" destination="uQX-QA-cav" id="wR6-Nj-hE0"/>
+                                    <segue destination="ZgI-ZK-ncw" kind="push" identifier="showDetail" id="umu-dg-tYZ"/>
+                                </connections>
+                            </collectionViewCell>
+                        </cells>
+                        <connections>
+                            <outlet property="dataSource" destination="rUm-ps-od8" id="oiP-Mn-5St"/>
+                            <outlet property="delegate" destination="rUm-ps-od8" id="lMr-lv-84m"/>
+                        </connections>
+                    </collectionView>
+                    <tabBarItem key="tabBarItem" title="Item" id="EvY-IP-gg0"/>
+                    <navigationItem key="navigationItem" id="fGx-gQ-Vld"/>
+                    <size key="freeformSize" width="400" height="568"/>
+                </collectionViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="1UR-Uy-f7F" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="653" y="-138"/>
+            <point key="canvasLocation" x="792" y="-470"/>
         </scene>
-        <!--class Prefix:identifier Second View Controller - Second-->
-        <scene sceneID="ot8-2e-RuS">
+        <!--My Closet Items Manager-->
+        <scene sceneID="6rH-1s-aaE">
             <objects>
-                <viewController title="Second" id="QUy-BD-bpt" customClass="SecondViewController" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="FgS-U6-xeU"/>
-                        <viewControllerLayoutGuide type="bottom" id="stI-4g-hlJ"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="gMD-aP-Fq6">
+                <collectionViewController autoresizesArchivedViewToFullSize="NO" id="ZgI-ZK-ncw" customClass="MyClosetItemsManager" sceneMemberID="viewController">
+                    <collectionView key="view" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" minimumZoomScale="0.0" maximumZoomScale="0.0" dataMode="prototypes" id="b38-Cb-upM">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" text="Second View" textAlignment="center" lineBreakMode="tailTruncation" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="29h-N2-YGT">
-                                <rect key="frame" x="20" y="158" width="280" height="42"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
-                                <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="36"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <textView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" userInteractionEnabled="NO" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" delaysContentTouches="NO" canCancelContentTouches="NO" minimumZoomScale="0.0" maximumZoomScale="0.0" bouncesZoom="NO" editable="NO" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="DcM-Fx-MKR">
-                                <rect key="frame" x="20" y="240" width="280" height="88"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="88" id="9fN-Zf-E0i"/>
-                                </constraints>
-                                <string key="text">Loaded by the second view controller — an instance of SecondViewController — specified in the app delegate.</string>
-                                <fontDescription key="fontDescription" type="system" size="system"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textView>
-                        </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
-                        <constraints>
-                            <constraint firstItem="29h-N2-YGT" firstAttribute="leading" secondItem="gMD-aP-Fq6" secondAttribute="leading" constant="20" symbolic="YES" id="4te-rk-9Fp"/>
-                            <constraint firstAttribute="trailing" secondItem="29h-N2-YGT" secondAttribute="trailing" constant="20" symbolic="YES" id="FIx-Zl-RBr"/>
-                            <constraint firstItem="DcM-Fx-MKR" firstAttribute="top" secondItem="29h-N2-YGT" secondAttribute="bottom" constant="40" id="Gb1-a9-eY8"/>
-                            <constraint firstAttribute="trailing" secondItem="DcM-Fx-MKR" secondAttribute="trailing" constant="20" symbolic="YES" id="XTh-ji-q0k"/>
-                            <constraint firstItem="DcM-Fx-MKR" firstAttribute="leading" secondItem="gMD-aP-Fq6" secondAttribute="leading" constant="20" symbolic="YES" id="l9f-S9-V20"/>
-                            <constraint firstAttribute="centerY" secondItem="DcM-Fx-MKR" secondAttribute="centerY" id="lHZ-e8-ii2"/>
-                        </constraints>
-                    </view>
-                    <tabBarItem key="tabBarItem" title="Second" image="second" id="Z7h-1E-pvt"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="3qq-4t-Ow8" sceneMemberID="firstResponder"/>
+                        <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="b5w-EC-4fP">
+                            <size key="itemSize" width="100" height="140"/>
+                            <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                            <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                            <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                        </collectionViewFlowLayout>
+                        <cells>
+                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="myClosetItemManagerCell" id="OJe-tE-x1p" customClass="MyClosetItemManagerCell">
+                                <rect key="frame" x="0.0" y="64" width="100" height="120"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                                    <rect key="frame" x="0.0" y="0.0" width="100" height="120"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="wdY-U2-EKy">
+                                            <rect key="frame" x="0.0" y="0.0" width="80" height="80"/>
+                                            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                        </imageView>
+                                        <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Z4I-gY-xmF">
+                                            <rect key="frame" x="25" y="5" width="30" height="30"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="15"/>
+                                            <state key="normal" title=" " backgroundImage="delete.png"/>
+                                            <connections>
+                                                <action selector="deleteItemManageCell:" destination="ZgI-ZK-ncw" eventType="touchUpInside" id="j4M-8Y-JyM"/>
+                                            </connections>
+                                        </button>
+                                        <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ebe-zy-N1j">
+                                            <rect key="frame" x="45" y="88" width="30" height="30"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <state key="normal" title="今日">
+                                                <color key="titleColor" red="0.22616865950000001" green="0.38584635620000002" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                            </state>
+                                            <connections>
+                                                <action selector="addItemToToday:" destination="ZgI-ZK-ncw" eventType="touchUpInside" id="4de-Zr-NVv"/>
+                                            </connections>
+                                        </button>
+                                    </subviews>
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                </view>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <size key="customSize" width="100" height="120"/>
+                                <connections>
+                                    <outlet property="btnAddToToday" destination="ebe-zy-N1j" id="bme-nN-fh5"/>
+                                    <outlet property="btnDeleteItem" destination="Z4I-gY-xmF" id="GOF-Cg-Nae"/>
+                                    <outlet property="myClosetItemManageImage" destination="wdY-U2-EKy" id="A9G-o1-OKN"/>
+                                </connections>
+                            </collectionViewCell>
+                        </cells>
+                        <connections>
+                            <outlet property="dataSource" destination="ZgI-ZK-ncw" id="ZKB-FS-c7p"/>
+                            <outlet property="delegate" destination="ZgI-ZK-ncw" id="wDi-vA-8Ny"/>
+                        </connections>
+                    </collectionView>
+                    <navigationItem key="navigationItem" id="MVH-GS-itz"/>
+                </collectionViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="u5T-em-WXz" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="653" y="498"/>
+            <point key="canvasLocation" x="1224" y="-470"/>
         </scene>
-        <!--Tab Bar Controller-->
+        <!--My Closet Today Nav - 今日-->
+        <scene sceneID="X7r-K3-sNR">
+            <objects>
+                <navigationController definesPresentationContext="YES" id="QWu-iy-o8l" customClass="MyClosetTodayNav" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="今日" image="second" id="pxc-jo-t1b"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="RPG-TS-AeQ">
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="Nqn-hv-ZMQ" kind="relationship" relationship="rootViewController" id="ORD-7G-9De"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="zbO-UR-leU" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="362" y="227"/>
+        </scene>
+        <!--My Closet Tab-->
         <scene sceneID="Vex-rW-GRa">
             <objects>
-                <tabBarController id="8YX-ce-x5E" sceneMemberID="viewController">
+                <tabBarController id="8YX-ce-x5E" customClass="MyClosetTab" sceneMemberID="viewController">
                     <nil key="simulatedBottomBarMetrics"/>
                     <tabBar key="tabBar" contentMode="scaleToFill" id="JQR-rB-NYL">
                         <rect key="frame" x="0.0" y="431" width="320" height="49"/>
@@ -105,18 +171,239 @@
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                     </tabBar>
                     <connections>
-                        <segue destination="CZ4-MO-1fc" kind="relationship" relationship="viewControllers" id="SUk-Ux-ee1"/>
-                        <segue destination="QUy-BD-bpt" kind="relationship" relationship="viewControllers" id="M8t-EP-wfW"/>
+                        <segue destination="0xo-em-fgL" kind="relationship" relationship="viewControllers" id="rvK-Mu-o3E"/>
+                        <segue destination="QWu-iy-o8l" kind="relationship" relationship="viewControllers" id="Ifz-2L-XTN"/>
+                        <segue destination="RrZ-m3-aqb" kind="relationship" relationship="viewControllers" id="b6T-wX-YNq"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="FNP-y4-bzi" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="132" y="180"/>
+            <point key="canvasLocation" x="-98" y="93"/>
+        </scene>
+        <!--My Closet Today View Controller - 今日-->
+        <scene sceneID="21x-iJ-8Rx">
+            <objects>
+                <collectionViewController autoresizesArchivedViewToFullSize="NO" id="Nqn-hv-ZMQ" customClass="MyClosetTodayViewController" sceneMemberID="viewController">
+                    <collectionView key="view" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" minimumZoomScale="0.0" maximumZoomScale="0.0" dataMode="prototypes" id="2Fd-CY-qtk">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="1Xi-3L-jWY">
+                            <size key="itemSize" width="80" height="105"/>
+                            <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                            <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                            <inset key="sectionInset" minX="20" minY="0.0" maxX="20" maxY="0.0"/>
+                        </collectionViewFlowLayout>
+                        <cells>
+                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="MyClosetTodayCell" id="a4C-Fa-ukq" customClass="MyClosetTodayCell">
+                                <rect key="frame" x="20" y="64" width="80" height="105"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                                    <rect key="frame" x="0.0" y="0.0" width="80" height="105"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="fqs-pz-jGH">
+                                            <rect key="frame" x="0.0" y="0.0" width="80" height="80"/>
+                                            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                        </imageView>
+                                        <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="大衣" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KH1-TH-jUs">
+                                            <rect key="frame" x="23" y="86" width="34" height="21"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                </view>
+                                <connections>
+                                    <outlet property="myClosetItemImage" destination="fqs-pz-jGH" id="iOC-GX-po8"/>
+                                </connections>
+                            </collectionViewCell>
+                        </cells>
+                        <connections>
+                            <outlet property="dataSource" destination="Nqn-hv-ZMQ" id="fbk-pH-PFq"/>
+                            <outlet property="delegate" destination="Nqn-hv-ZMQ" id="FGF-aV-COG"/>
+                        </connections>
+                    </collectionView>
+                    <navigationItem key="navigationItem" title="今日" id="DD5-1U-V7r"/>
+                    <connections>
+                        <outlet property="collectionView" destination="2Fd-CY-qtk" id="jIB-f8-3wP"/>
+                    </connections>
+                </collectionViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="GL6-qn-LX0" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="799" y="218"/>
+        </scene>
+        <!--My Closet Camera View Controller - 相片-->
+        <scene sceneID="qLk-Lo-kOn">
+            <objects>
+                <viewController id="RrZ-m3-aqb" customClass="MyClosetCameraViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="qbh-6J-S4Y"/>
+                        <viewControllerLayoutGuide type="bottom" id="CoF-rL-ewV"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleAspectFit" id="D6L-ii-CEe">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="APA-EX-JTO">
+                                <rect key="frame" x="0.0" y="21" width="320" height="392"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                            </imageView>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="图片分类：" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8IK-zd-Xlf">
+                                <rect key="frame" x="25" y="442" width="100" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="dw8-3u-QcW"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Nep-pe-o6g">
+                                <rect key="frame" x="25" y="478" width="50" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="50" id="eM2-D4-jFC"/>
+                                </constraints>
+                                <state key="normal" title="外套"/>
+                                <connections>
+                                    <action selector="selectTag:" destination="RrZ-m3-aqb" eventType="touchUpInside" id="L9C-hO-KeO"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PZ2-dG-fsf">
+                                <rect key="frame" x="95" y="478" width="50" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="50" id="gum-MX-DzO"/>
+                                </constraints>
+                                <state key="normal" title="上衣"/>
+                                <connections>
+                                    <action selector="selectTag:" destination="RrZ-m3-aqb" eventType="touchUpInside" id="XTh-lM-hf3"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iHA-zm-iL8">
+                                <rect key="frame" x="25" y="518" width="50" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="50" id="wUR-UJ-Zv2"/>
+                                </constraints>
+                                <state key="normal" title="裙装"/>
+                                <connections>
+                                    <action selector="selectTag:" destination="RrZ-m3-aqb" eventType="touchUpInside" id="NMg-0f-FPD"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8v3-xX-R3U">
+                                <rect key="frame" x="95" y="518" width="50" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="50" id="Qdk-qH-cXT"/>
+                                </constraints>
+                                <state key="normal" title="鞋"/>
+                                <connections>
+                                    <action selector="selectTag:" destination="RrZ-m3-aqb" eventType="touchUpInside" id="Ob0-hv-ucO"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YLY-nY-MIP">
+                                <rect key="frame" x="165" y="478" width="50" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="50" id="6kF-tT-heA"/>
+                                </constraints>
+                                <state key="normal" title="裤装"/>
+                                <connections>
+                                    <action selector="selectTag:" destination="RrZ-m3-aqb" eventType="touchDown" id="lnQ-lj-tt7"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="5" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Bu2-XN-dCO">
+                                <rect key="frame" x="165" y="518" width="50" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="50" id="bAj-rX-V6T"/>
+                                </constraints>
+                                <state key="normal" title="饰物"/>
+                                <connections>
+                                    <action selector="selectTag:" destination="RrZ-m3-aqb" eventType="touchDown" id="h83-aL-jlw"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="g61-Yt-HeD">
+                                <rect key="frame" x="240" y="488" width="50" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="50" id="82o-gJ-WHn"/>
+                                    <constraint firstAttribute="height" constant="30" id="xyp-JO-q83"/>
+                                </constraints>
+                                <state key="normal" title="保存">
+                                    <color key="titleColor" red="1" green="0.83921575546264648" blue="0.0" alpha="1" colorSpace="deviceRGB"/>
+                                    <color key="titleShadowColor" red="0.86178651147959184" green="0.39682336072210972" blue="0.48858064471554347" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="savePhoto:" destination="RrZ-m3-aqb" eventType="touchDown" id="Ebz-rI-xab"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" tag="99" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="        " lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NEC-3S-aN7">
+                                <rect key="frame" x="150" y="442" width="100" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="aDI-Na-SbY"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="CoF-rL-ewV" firstAttribute="top" secondItem="iHA-zm-iL8" secondAttribute="bottom" constant="20" id="BQd-pv-Cfo"/>
+                            <constraint firstItem="APA-EX-JTO" firstAttribute="leading" secondItem="D6L-ii-CEe" secondAttribute="leading" id="FBX-gK-uOu"/>
+                            <constraint firstItem="Nep-pe-o6g" firstAttribute="leading" secondItem="8IK-zd-Xlf" secondAttribute="leading" id="JSj-7S-VBq"/>
+                            <constraint firstItem="8v3-xX-R3U" firstAttribute="leading" secondItem="iHA-zm-iL8" secondAttribute="trailing" constant="20" id="Ngo-3U-GBT"/>
+                            <constraint firstAttribute="trailing" secondItem="g61-Yt-HeD" secondAttribute="trailing" constant="30" id="O04-Rf-7lw"/>
+                            <constraint firstItem="iHA-zm-iL8" firstAttribute="top" secondItem="Nep-pe-o6g" secondAttribute="bottom" constant="10" id="Q2a-qF-gZ9"/>
+                            <constraint firstItem="Bu2-XN-dCO" firstAttribute="centerY" secondItem="8v3-xX-R3U" secondAttribute="centerY" id="QED-5w-92J"/>
+                            <constraint firstItem="Nep-pe-o6g" firstAttribute="centerY" secondItem="PZ2-dG-fsf" secondAttribute="centerY" id="RHc-JU-bWa"/>
+                            <constraint firstItem="YLY-nY-MIP" firstAttribute="centerY" secondItem="PZ2-dG-fsf" secondAttribute="centerY" id="SkL-zg-tZZ"/>
+                            <constraint firstItem="APA-EX-JTO" firstAttribute="top" secondItem="qbh-6J-S4Y" secondAttribute="bottom" constant="1" id="XLT-MD-Tf1"/>
+                            <constraint firstItem="YLY-nY-MIP" firstAttribute="centerX" secondItem="Bu2-XN-dCO" secondAttribute="centerX" id="cZ1-kt-IXw"/>
+                            <constraint firstAttribute="trailing" secondItem="APA-EX-JTO" secondAttribute="trailing" id="dgz-Bn-EgN"/>
+                            <constraint firstItem="CoF-rL-ewV" firstAttribute="top" secondItem="g61-Yt-HeD" secondAttribute="bottom" constant="50" id="j6N-hO-QRU"/>
+                            <constraint firstItem="Nep-pe-o6g" firstAttribute="top" secondItem="8IK-zd-Xlf" secondAttribute="bottom" constant="15" id="jVY-fG-hmN"/>
+                            <constraint firstItem="8v3-xX-R3U" firstAttribute="centerX" secondItem="PZ2-dG-fsf" secondAttribute="centerX" id="lu7-KZ-Xbz"/>
+                            <constraint firstItem="Nep-pe-o6g" firstAttribute="centerX" secondItem="iHA-zm-iL8" secondAttribute="centerX" id="mfd-6A-ZLS"/>
+                            <constraint firstItem="NEC-3S-aN7" firstAttribute="leading" secondItem="8IK-zd-Xlf" secondAttribute="trailing" constant="25" id="nAV-YF-QQr"/>
+                            <constraint firstItem="NEC-3S-aN7" firstAttribute="centerY" secondItem="8IK-zd-Xlf" secondAttribute="centerY" id="oDF-Gg-Dsl"/>
+                            <constraint firstItem="CoF-rL-ewV" firstAttribute="top" secondItem="APA-EX-JTO" secondAttribute="bottom" constant="155" id="rBd-Hu-vgz"/>
+                            <constraint firstItem="iHA-zm-iL8" firstAttribute="leading" secondItem="D6L-ii-CEe" secondAttribute="leading" constant="25" id="sXj-9g-L6q"/>
+                            <constraint firstItem="Bu2-XN-dCO" firstAttribute="leading" secondItem="8v3-xX-R3U" secondAttribute="trailing" constant="20" id="wZX-vA-lT9"/>
+                            <constraint firstItem="8v3-xX-R3U" firstAttribute="centerY" secondItem="iHA-zm-iL8" secondAttribute="centerY" id="z7U-r8-9gp"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="拍照" image="second" id="UGr-YK-cl5"/>
+                    <navigationItem key="navigationItem" title="相片" id="jxx-Jl-YB0">
+                        <barButtonItem key="backBarButtonItem" title="返回" width="10" id="F3Q-wM-qvp"/>
+                    </navigationItem>
+                    <nil key="simulatedTopBarMetrics"/>
+                    <nil key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="photoView" destination="APA-EX-JTO" id="rnh-sl-uk5"/>
+                        <outlet property="saveButton" destination="g61-Yt-HeD" id="G9b-v3-wuK"/>
+                        <outlet property="tagLabel" destination="NEC-3S-aN7" id="k9L-hr-fP2"/>
+                        <outletCollection property="tagsArray" destination="YLY-nY-MIP" id="4wu-eH-vj6"/>
+                        <outletCollection property="tagsArray" destination="PZ2-dG-fsf" id="c5u-Wi-sx9"/>
+                        <outletCollection property="tagsArray" destination="Nep-pe-o6g" id="5E1-5d-08e"/>
+                        <outletCollection property="tagsArray" destination="iHA-zm-iL8" id="7sv-Hh-Gpq"/>
+                        <outletCollection property="tagsArray" destination="8v3-xX-R3U" id="4LC-Wd-ZWc"/>
+                        <outletCollection property="tagsArray" destination="Bu2-XN-dCO" id="xmc-h6-mDn"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Tln-qj-kXv" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="352" y="946"/>
         </scene>
     </scenes>
     <resources>
-        <image name="first" width="16" height="16"/>
-        <image name="second" width="16" height="16"/>
+        <image name="delete.png" width="256" height="256"/>
+        <image name="second" width="30" height="30"/>
     </resources>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>

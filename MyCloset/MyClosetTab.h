@@ -1,5 +1,5 @@
 //
-//  AppDelegate.h
+//  MyClosetTab.h
 //  MyCloset
 //
 //  Created by sunning on 14-11-2.
@@ -8,8 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface AppDelegate : UIResponder <UIApplicationDelegate>
-
-@property (strong, nonatomic) UIWindow *window;
+@interface MyClosetTab : UITabBarController
 
 @end

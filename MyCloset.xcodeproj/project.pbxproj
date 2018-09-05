@@ -7,22 +7,38 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		228B3ABD1A08F800002303A9 /* MyClosetItemsCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 228B3ABC1A08F800002303A9 /* MyClosetItemsCell.m */; };
+		229096DC1A134AFA000C6A97 /* dress.png in Resources */ = {isa = PBXBuildFile; fileRef = 229096DB1A134AFA000C6A97 /* dress.png */; };
+		229096E11A134B16000C6A97 /* pants.png in Resources */ = {isa = PBXBuildFile; fileRef = 229096DD1A134B16000C6A97 /* pants.png */; };
+		229096E21A134B16000C6A97 /* shirt.png in Resources */ = {isa = PBXBuildFile; fileRef = 229096DE1A134B16000C6A97 /* shirt.png */; };
+		229096E31A134B16000C6A97 /* shoes.png in Resources */ = {isa = PBXBuildFile; fileRef = 229096DF1A134B16000C6A97 /* shoes.png */; };
+		229096E41A134B16000C6A97 /* sweater.png in Resources */ = {isa = PBXBuildFile; fileRef = 229096E01A134B16000C6A97 /* sweater.png */; };
+		229096E61A134B29000C6A97 /* accessory.png in Resources */ = {isa = PBXBuildFile; fileRef = 229096E51A134B29000C6A97 /* accessory.png */; };
+		22A6C2041A110C2600B80228 /* delete.png in Resources */ = {isa = PBXBuildFile; fileRef = 22A6C2031A110C2600B80228 /* delete.png */; };
+		22D848C01A134FE10044A5DC /* MyClosetCameraViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 22D848BF1A134FE10044A5DC /* MyClosetCameraViewController.m */; };
+		22D848C71A1354D40044A5DC /* MyClosetTodayCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 22D848C21A1354D40044A5DC /* MyClosetTodayCell.m */; };
+		22D848C81A1354D40044A5DC /* MyClosetTodayNavController.m in Sources */ = {isa = PBXBuildFile; fileRef = 22D848C41A1354D40044A5DC /* MyClosetTodayNavController.m */; };
+		22D848C91A1354D40044A5DC /* MyClosetTodayViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 22D848C61A1354D40044A5DC /* MyClosetTodayViewController.m */; };
 		22EFBF261A065A1A007D0886 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 22EFBF251A065A1A007D0886 /* Foundation.framework */; };
 		22EFBF281A065A1A007D0886 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 22EFBF271A065A1A007D0886 /* CoreGraphics.framework */; };
 		22EFBF2A1A065A1A007D0886 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 22EFBF291A065A1A007D0886 /* UIKit.framework */; };
 		22EFBF301A065A1A007D0886 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 22EFBF2E1A065A1A007D0886 /* InfoPlist.strings */; };
 		22EFBF321A065A1A007D0886 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 22EFBF311A065A1A007D0886 /* main.m */; };
-		22EFBF361A065A1A007D0886 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 22EFBF351A065A1A007D0886 /* AppDelegate.m */; };
+		22EFBF361A065A1A007D0886 /* TabViewAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 22EFBF351A065A1A007D0886 /* TabViewAppDelegate.m */; };
 		22EFBF391A065A1A007D0886 /* Main_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 22EFBF371A065A1A007D0886 /* Main_iPhone.storyboard */; };
 		22EFBF3C1A065A1A007D0886 /* Main_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 22EFBF3A1A065A1A007D0886 /* Main_iPad.storyboard */; };
-		22EFBF3F1A065A1A007D0886 /* FirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 22EFBF3E1A065A1A007D0886 /* FirstViewController.m */; };
-		22EFBF421A065A1A007D0886 /* SecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 22EFBF411A065A1A007D0886 /* SecondViewController.m */; };
 		22EFBF441A065A1A007D0886 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 22EFBF431A065A1A007D0886 /* Images.xcassets */; };
 		22EFBF4B1A065A1A007D0886 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 22EFBF4A1A065A1A007D0886 /* XCTest.framework */; };
 		22EFBF4C1A065A1A007D0886 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 22EFBF251A065A1A007D0886 /* Foundation.framework */; };
 		22EFBF4D1A065A1A007D0886 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 22EFBF291A065A1A007D0886 /* UIKit.framework */; };
 		22EFBF551A065A1A007D0886 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 22EFBF531A065A1A007D0886 /* InfoPlist.strings */; };
 		22EFBF571A065A1A007D0886 /* MyClosetTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 22EFBF561A065A1A007D0886 /* MyClosetTests.m */; };
+		22EFBF631A066902007D0886 /* MyClosetTab.m in Sources */ = {isa = PBXBuildFile; fileRef = 22EFBF611A066902007D0886 /* MyClosetTab.m */; };
+		22EFBF681A066A6E007D0886 /* MyClosetItemsNav.m in Sources */ = {isa = PBXBuildFile; fileRef = 22EFBF661A066A6E007D0886 /* MyClosetItemsNav.m */; };
+		22EFBF6D1A0672BE007D0886 /* MyClosetItemsView.m in Sources */ = {isa = PBXBuildFile; fileRef = 22EFBF6B1A0672BE007D0886 /* MyClosetItemsView.m */; };
+		22EFBF721A0674CA007D0886 /* MyClosetItemsManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 22EFBF701A0674CA007D0886 /* MyClosetItemsManager.m */; };
+		22F9F57B1A0732230019832E /* MyClosetTodayNav.m in Sources */ = {isa = PBXBuildFile; fileRef = 22F9F5791A0732230019832E /* MyClosetTodayNav.m */; };
+		22F9F58A1A078DE80019832E /* MyClosetItemManagerCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 22F9F5891A078DE80019832E /* MyClosetItemManagerCell.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +52,23 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		228B3ABB1A08F800002303A9 /* MyClosetItemsCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyClosetItemsCell.h; sourceTree = "<group>"; };
+		228B3ABC1A08F800002303A9 /* MyClosetItemsCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyClosetItemsCell.m; sourceTree = "<group>"; };
+		229096DB1A134AFA000C6A97 /* dress.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = dress.png; sourceTree = "<group>"; };
+		229096DD1A134B16000C6A97 /* pants.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = pants.png; sourceTree = "<group>"; };
+		229096DE1A134B16000C6A97 /* shirt.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = shirt.png; sourceTree = "<group>"; };
+		229096DF1A134B16000C6A97 /* shoes.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = shoes.png; sourceTree = "<group>"; };
+		229096E01A134B16000C6A97 /* sweater.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = sweater.png; sourceTree = "<group>"; };
+		229096E51A134B29000C6A97 /* accessory.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = accessory.png; sourceTree = "<group>"; };
+		22A6C2031A110C2600B80228 /* delete.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = delete.png; sourceTree = "<group>"; };
+		22D848BE1A134FE10044A5DC /* MyClosetCameraViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyClosetCameraViewController.h; sourceTree = SOURCE_ROOT; };
+		22D848BF1A134FE10044A5DC /* MyClosetCameraViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyClosetCameraViewController.m; sourceTree = SOURCE_ROOT; };
+		22D848C11A1354D40044A5DC /* MyClosetTodayCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyClosetTodayCell.h; sourceTree = "<group>"; };
+		22D848C21A1354D40044A5DC /* MyClosetTodayCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyClosetTodayCell.m; sourceTree = "<group>"; };
+		22D848C31A1354D40044A5DC /* MyClosetTodayNavController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyClosetTodayNavController.h; sourceTree = "<group>"; };
+		22D848C41A1354D40044A5DC /* MyClosetTodayNavController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyClosetTodayNavController.m; sourceTree = "<group>"; };
+		22D848C51A1354D40044A5DC /* MyClosetTodayViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyClosetTodayViewController.h; sourceTree = "<group>"; };
+		22D848C61A1354D40044A5DC /* MyClosetTodayViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyClosetTodayViewController.m; sourceTree = "<group>"; };
 		22EFBF221A065A1A007D0886 /* MyCloset.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyCloset.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		22EFBF251A065A1A007D0886 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		22EFBF271A065A1A007D0886 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -44,20 +77,28 @@
 		22EFBF2F1A065A1A007D0886 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		22EFBF311A065A1A007D0886 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		22EFBF331A065A1A007D0886 /* MyCloset-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MyCloset-Prefix.pch"; sourceTree = "<group>"; };
-		22EFBF341A065A1A007D0886 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
-		22EFBF351A065A1A007D0886 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		22EFBF341A065A1A007D0886 /* TabViewAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TabViewAppDelegate.h; sourceTree = "<group>"; };
+		22EFBF351A065A1A007D0886 /* TabViewAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TabViewAppDelegate.m; sourceTree = "<group>"; };
 		22EFBF381A065A1A007D0886 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPhone.storyboard; sourceTree = "<group>"; };
 		22EFBF3B1A065A1A007D0886 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPad.storyboard; sourceTree = "<group>"; };
-		22EFBF3D1A065A1A007D0886 /* FirstViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FirstViewController.h; sourceTree = "<group>"; };
-		22EFBF3E1A065A1A007D0886 /* FirstViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FirstViewController.m; sourceTree = "<group>"; };
-		22EFBF401A065A1A007D0886 /* SecondViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SecondViewController.h; sourceTree = "<group>"; };
-		22EFBF411A065A1A007D0886 /* SecondViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SecondViewController.m; sourceTree = "<group>"; };
 		22EFBF431A065A1A007D0886 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		22EFBF491A065A1A007D0886 /* MyClosetTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MyClosetTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		22EFBF4A1A065A1A007D0886 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		22EFBF521A065A1A007D0886 /* MyClosetTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "MyClosetTests-Info.plist"; sourceTree = "<group>"; };
 		22EFBF541A065A1A007D0886 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		22EFBF561A065A1A007D0886 /* MyClosetTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MyClosetTests.m; sourceTree = "<group>"; };
+		22EFBF601A066902007D0886 /* MyClosetTab.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyClosetTab.h; sourceTree = "<group>"; };
+		22EFBF611A066902007D0886 /* MyClosetTab.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyClosetTab.m; sourceTree = "<group>"; };
+		22EFBF651A066A6E007D0886 /* MyClosetItemsNav.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyClosetItemsNav.h; sourceTree = "<group>"; };
+		22EFBF661A066A6E007D0886 /* MyClosetItemsNav.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyClosetItemsNav.m; sourceTree = "<group>"; };
+		22EFBF6A1A0672BE007D0886 /* MyClosetItemsView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyClosetItemsView.h; sourceTree = "<group>"; };
+		22EFBF6B1A0672BE007D0886 /* MyClosetItemsView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyClosetItemsView.m; sourceTree = "<group>"; };
+		22EFBF6F1A0674CA007D0886 /* MyClosetItemsManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyClosetItemsManager.h; sourceTree = "<group>"; };
+		22EFBF701A0674CA007D0886 /* MyClosetItemsManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyClosetItemsManager.m; sourceTree = "<group>"; };
+		22F9F5781A0732230019832E /* MyClosetTodayNav.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyClosetTodayNav.h; sourceTree = "<group>"; };
+		22F9F5791A0732230019832E /* MyClosetTodayNav.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyClosetTodayNav.m; sourceTree = "<group>"; };
+		22F9F5881A078DE70019832E /* MyClosetItemManagerCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyClosetItemManagerCell.h; sourceTree = "<group>"; };
+		22F9F5891A078DE80019832E /* MyClosetItemManagerCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyClosetItemManagerCell.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -117,14 +158,39 @@
 		22EFBF2B1A065A1A007D0886 /* MyCloset */ = {
 			isa = PBXGroup;
 			children = (
-				22EFBF341A065A1A007D0886 /* AppDelegate.h */,
-				22EFBF351A065A1A007D0886 /* AppDelegate.m */,
+				22D848BF1A134FE10044A5DC /* MyClosetCameraViewController.m */,
+				22D848BE1A134FE10044A5DC /* MyClosetCameraViewController.h */,
+				229096DD1A134B16000C6A97 /* pants.png */,
+				229096DE1A134B16000C6A97 /* shirt.png */,
+				229096DF1A134B16000C6A97 /* shoes.png */,
+				229096E01A134B16000C6A97 /* sweater.png */,
+				229096DB1A134AFA000C6A97 /* dress.png */,
+				229096E51A134B29000C6A97 /* accessory.png */,
+				22A6C2031A110C2600B80228 /* delete.png */,
+				22EFBF341A065A1A007D0886 /* TabViewAppDelegate.h */,
+				22EFBF351A065A1A007D0886 /* TabViewAppDelegate.m */,
+				22D848C11A1354D40044A5DC /* MyClosetTodayCell.h */,
+				22D848C21A1354D40044A5DC /* MyClosetTodayCell.m */,
+				22D848C31A1354D40044A5DC /* MyClosetTodayNavController.h */,
+				22D848C41A1354D40044A5DC /* MyClosetTodayNavController.m */,
+				22D848C51A1354D40044A5DC /* MyClosetTodayViewController.h */,
+				22D848C61A1354D40044A5DC /* MyClosetTodayViewController.m */,
 				22EFBF371A065A1A007D0886 /* Main_iPhone.storyboard */,
+				228B3ABB1A08F800002303A9 /* MyClosetItemsCell.h */,
+				228B3ABC1A08F800002303A9 /* MyClosetItemsCell.m */,
+				22F9F5881A078DE70019832E /* MyClosetItemManagerCell.h */,
+				22F9F5891A078DE80019832E /* MyClosetItemManagerCell.m */,
+				22F9F5781A0732230019832E /* MyClosetTodayNav.h */,
+				22F9F5791A0732230019832E /* MyClosetTodayNav.m */,
+				22EFBF651A066A6E007D0886 /* MyClosetItemsNav.h */,
+				22EFBF661A066A6E007D0886 /* MyClosetItemsNav.m */,
+				22EFBF6A1A0672BE007D0886 /* MyClosetItemsView.h */,
+				22EFBF6F1A0674CA007D0886 /* MyClosetItemsManager.h */,
+				22EFBF701A0674CA007D0886 /* MyClosetItemsManager.m */,
+				22EFBF6B1A0672BE007D0886 /* MyClosetItemsView.m */,
+				22EFBF601A066902007D0886 /* MyClosetTab.h */,
+				22EFBF611A066902007D0886 /* MyClosetTab.m */,
 				22EFBF3A1A065A1A007D0886 /* Main_iPad.storyboard */,
-				22EFBF3D1A065A1A007D0886 /* FirstViewController.h */,
-				22EFBF3E1A065A1A007D0886 /* FirstViewController.m */,
-				22EFBF401A065A1A007D0886 /* SecondViewController.h */,
-				22EFBF411A065A1A007D0886 /* SecondViewController.m */,
 				22EFBF431A065A1A007D0886 /* Images.xcassets */,
 				22EFBF2C1A065A1A007D0886 /* Supporting Files */,
 			);
@@ -237,9 +303,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				22EFBF3C1A065A1A007D0886 /* Main_iPad.storyboard in Resources */,
+				229096E61A134B29000C6A97 /* accessory.png in Resources */,
+				22A6C2041A110C2600B80228 /* delete.png in Resources */,
 				22EFBF441A065A1A007D0886 /* Images.xcassets in Resources */,
+				229096E31A134B16000C6A97 /* shoes.png in Resources */,
 				22EFBF391A065A1A007D0886 /* Main_iPhone.storyboard in Resources */,
+				229096E41A134B16000C6A97 /* sweater.png in Resources */,
 				22EFBF301A065A1A007D0886 /* InfoPlist.strings in Resources */,
+				229096DC1A134AFA000C6A97 /* dress.png in Resources */,
+				229096E11A134B16000C6A97 /* pants.png in Resources */,
+				229096E21A134B16000C6A97 /* shirt.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -258,10 +331,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				22EFBF421A065A1A007D0886 /* SecondViewController.m in Sources */,
-				22EFBF361A065A1A007D0886 /* AppDelegate.m in Sources */,
-				22EFBF3F1A065A1A007D0886 /* FirstViewController.m in Sources */,
+				228B3ABD1A08F800002303A9 /* MyClosetItemsCell.m in Sources */,
+				22EFBF6D1A0672BE007D0886 /* MyClosetItemsView.m in Sources */,
+				22EFBF361A065A1A007D0886 /* TabViewAppDelegate.m in Sources */,
+				22EFBF681A066A6E007D0886 /* MyClosetItemsNav.m in Sources */,
+				22D848C01A134FE10044A5DC /* MyClosetCameraViewController.m in Sources */,
+				22D848C71A1354D40044A5DC /* MyClosetTodayCell.m in Sources */,
+				22F9F58A1A078DE80019832E /* MyClosetItemManagerCell.m in Sources */,
+				22D848C81A1354D40044A5DC /* MyClosetTodayNavController.m in Sources */,
+				22F9F57B1A0732230019832E /* MyClosetTodayNav.m in Sources */,
 				22EFBF321A065A1A007D0886 /* main.m in Sources */,
+				22EFBF721A0674CA007D0886 /* MyClosetItemsManager.m in Sources */,
+				22EFBF631A066902007D0886 /* MyClosetTab.m in Sources */,
+				22D848C91A1354D40044A5DC /* MyClosetTodayViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -476,6 +558,7 @@
 				22EFBF5C1A065A1A007D0886 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		22EFBF5D1A065A1A007D0886 /* Build configuration list for PBXNativeTarget "MyClosetTests" */ = {
 			isa = XCConfigurationList;
@@ -484,6 +567,7 @@
 				22EFBF5F1A065A1A007D0886 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

@@ -8,11 +8,11 @@
 
 #import <UIKit/UIKit.h>
 
-#import "AppDelegate.h"
+#import "TabViewAppDelegate.h"
 
 int main(int argc, char * argv[])
 {
     @autoreleasepool {
-        return UIApplicationMain(argc, argv, nil, NSStringFromClass([AppDelegate class]));
+        return UIApplicationMain(argc, argv, nil, NSStringFromClass([TabViewAppDelegate class]));
     }
 }
